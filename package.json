@@ -1,0 +1,45 @@
+{
+  "name": "wikihedron",
+  "version": "0.0.1",
+  "description": "wikipedia activity as mixed reality art",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production parcel build src/index.html",
+    "dev": "cross-env NODE_ENV=development parcel src/index.html",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "webxr",
+    "webgl",
+    "immersive web",
+    "threejs"
+  ],
+  "author": "halvves <hi@halvves.com> (https://halvves.com/)",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/proposal-class-properties",
+      [
+        "@babel/transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/runtime": "^7.2.0",
+    "cross-env": "^5.2.0",
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "three": "^0.99.0"
+  }
+}
